@@ -1,0 +1,31 @@
+<!Simple dom modification bound to the onclick event of a button>
+
+<!JS was invented by Brendan Eich in 1995, became ECMA standard in 1997 (ECMA-262)>
+
+<!Both double and single quotes can be used. Nesting is possible by using different types of quotes (see below)>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Changing dom elements with events</h2>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+<p id="demo"></p>
+
+
+<h2>Changing HTML attribute values</h2>
+<p><button id="b1" onclick="document.getElementById('myImage').src='http://cosmodog.eu/pics/screenshot1.png'">First Screenshot of Cosmodog</button></p>
+<p><button id="b2" onclick="document.getElementById('myImage').src='http://cosmodog.eu/pics/screenshot2.png'">Second Screenshot of Cosmodog</button></p>
+<p><img id="myImage" src="http://cosmodog.eu/pics/screenshot1.png" style="width:100px"></p>
+
+
+<h2>Changing CSS style with JS</h2>
+<p><button id="b3" onclick="document.getElementById('b3').style.fontSize = '35px'">Change font size of this button</button></p>
+
+<h2>Hiding elements with JS by modifying styles</h2>
+<p><button id="b4" onclick="document.getElementById('b4').style.display = 'none'">Hide me</button></p>
+<p><button id="b5" onclick="document.getElementById('b4').style.display = 'block'">Show it</button></p>
+
+
+</body>
+</html> 
