@@ -1,1 +1,45 @@
 
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<script>
+		
+		<!--A script can be added in the head section, like this function.-->
+		function changeP3(text) {
+		  document.getElementById("p3").innerHTML = text;
+		}
+		</script>
+
+	</head>
+
+	<body>
+
+		<h2>JavaScript in Body</h2>
+
+		<p id="p1">P1 was created before the inclusion of script and NOT changed by its script</p>
+
+		<!--
+
+		A script can be added with the script tag anywhere in the HTML body.
+		Note how it does not change an element that is not created yet.
+
+		-->
+		<script>
+			document.getElementById("p1").innerHTML = "P1 was created before the inclusion of script and changed by its script";
+			document.getElementById("p2").innerHTML = "P2 was created after the inclusion of script and changed by its script";
+		</script>
+
+		<p id="p2">P2 was created after the inclusion of script and NOT changed by its script</p>
+		
+		<p id="p3">P3 is not changed</p>
+		
+		<!--A defined function can be called anywhere in the body and added as an onclick handler for a button.-->
+		
+		<script>changeP3("P3 was changed by calling the changeP3() function within the html body")</script>
+		
+		<button type="button" onclick="changeP3('P3 was changed AGAIN by calling the changeP3() function as onclick handler of a button')">Change P3</button>
+
+	</body>
+</html> 
