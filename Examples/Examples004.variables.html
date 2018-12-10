@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	</head>
+
+	<body>
+		
+		<!--Pecularities of JavaScript variables-->
+		<h1>Pecularities of JavaScript variables</h1>
+		
+		
+		<!-- A variable can be redeclared -->		
+				
+		<p>
+			<div>
+				
+				<script>
+					var x = 42;
+					var x;
+					var y = 42;
+					var y = 666;
+					var z;
+				</script>
+				
+				<button type="button" onclick="window.alert(x)">Print x after two declarations</button>
+				<button type="button" onclick="window.alert(y)">Print y after two declarations and reassignment</button>
+				<button type="button" onclick="window.alert(z)">Print z without assignment</button>
+			</div>
+		</p>
+		
+		<!-- operations on variables of different types are possible -->		
+				
+		<p>
+			<div>
+				
+				<script>
+					var x = "42" + 5 + 6;
+					var y = 42 + 5 + "6";
+					var z = 1 + 2 + "3" + 4 + 5;
+				</script>
+				
+				<button type="button" onclick="window.alert(x)">Print x that was constructed by 'adding' "42" + 5 + 6</button>
+				<button type="button" onclick="window.alert(y)">Print y that was constructed by 'adding' 42 + 5 + "6"</button>
+				<button type="button" onclick="window.alert(z)">Print z that was constructed by 'adding' 1 + 2 + "3" + 4 + 5</button>
+			</div>
+		</p>
+		
+		
+	</body>
+</html> 
