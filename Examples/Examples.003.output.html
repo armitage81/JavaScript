@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	</head>
+
+	<body>
+		
+		<!--Ways to output text in JavaScript-->
+		<h1>Ways to output text in JavaScript</h1>
+		
+		
+		<!-- 1: Change innerHtml -->		
+		<p>
+			<div>
+				<p id="p1">Original P1 text</p>
+				<button type="button" onclick="document.getElementById('p1').innerHTML = 'Changed P1 text' ">Change p1 inner text</button>
+				<button type="button" onclick="document.getElementById('p1').innerHTML = '<p>Now we have three paragraphs within P1 by entering html tags in the innerHTML</p><p>element1</p><p>element2</p>' ">Change p1 inner structure</button>
+			</div>
+		</p>
+		
+		<!-- 2: Use document.write -->
+		<p>
+			<div>
+				<button type="button" onclick="document.write('document.write replaced the whole html with the parameter content')">Use document.write</button>
+			</div>
+		</p>
+		
+		
+		<!-- 2: Use window.alert -->
+		<p>
+			<div>
+				<button type="button" onclick="window.alert('window.alert prints a popup message')">Call window.alert</button>
+			</div>
+		</p>
+		
+		
+		<!-- 2: Use console.log -->
+		<p>
+			<div>
+				<button type="button" onclick="console.log('console.log printed this message')">Call console.log</button>
+			</div>
+		</p>
+		
+		
+	</body>
+</html> 
